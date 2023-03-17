@@ -46,7 +46,7 @@ class _FoodScreenState extends State<FoodScreen> {
             onTap: (){
               Navigator.push(context, 
               MaterialPageRoute(builder: ((context) => 
-              OrderFoodScreen(imagesName: foodImages[index],)))
+              OrderFoodScreen(imagesName: foodImages[index],foodName: foodNames[index],)))
               );
             },
             child: Column(
