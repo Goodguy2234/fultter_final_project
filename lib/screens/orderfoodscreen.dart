@@ -1,4 +1,4 @@
-import 'dart:ui';
+
 
 import 'package:flutter/material.dart';
 
@@ -11,7 +11,7 @@ class OrderFoodScreen extends StatefulWidget {
 
   final String imagesName;
   final String foodName;
-
+  
   @override
   State<OrderFoodScreen> createState() => _OrderFoodScreenState();
 }
@@ -111,7 +111,7 @@ class _OrderFoodScreenState extends State<OrderFoodScreen> {
     //var url = Uri.https('http://192.168.1.146:3000/insertorder&#39;);
 
     try {
-      var url = Uri.http('10.34.6.67:3000', '/insertorder');
+      var url = Uri.http('192.168.1.40:3000', '/insertorder');
 
       var response = await http.post(url,
           headers: {'Content-Type': 'application/json'},

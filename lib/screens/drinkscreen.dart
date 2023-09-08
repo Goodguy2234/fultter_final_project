@@ -42,10 +42,10 @@ class _DrinkScreenState extends State<DrinkScreen> {
       itemBuilder: (BuildContext context, int index) {
         return Card(
           child:InkWell(
-            onTap: (){
+             onTap: (){
               Navigator.push(context, 
               MaterialPageRoute(builder: ((context) => 
-              DrinkOrderScreen(imagesName: drinkImages[index],)))
+              DrinkOrderScreen(imagesName: drinkImages[index],drinkName: drinkNames[index],)))
               );
             },
             child: Column(

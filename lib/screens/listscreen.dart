@@ -27,10 +27,10 @@ class _ListScreenState extends State<ListScreen> {
         child: ListView.separated(
             itemBuilder: (context, index) {
               return ListTile(
-                //leading: Image.network('${_lsProducts?[index].thumbnail}'),
-                //leading: Image.asset(''),
+                // leading: Image.network('${_listOrder?[index].product_img}'),
+                leading: Image.asset('${_listOrder?[index].product_img}'),
                 title: Text('${_listOrder? [index].product_name}'),
-                subtitle: Text('${_listOrder? [index].order_no}'),
+                subtitle: Text('${_listOrder? [index].order_num}ชิ้น'),
                 onTap: () {
                   print(index);
                 },
@@ -47,7 +47,11 @@ class _ListScreenState extends State<ListScreen> {
       String oid = '63011211129';
 
       var url = Uri.http(
+<<<<<<< HEAD
           '192.168.1.27:3000', '/orderwhere', {'cust_id': '63011211129'});
+=======
+          '192.168.1.40:3000', '/orderwhere', {'cust_id': '63011211129'});
+>>>>>>> 3617e809dba727ffcb595f4cf4b80d38b3bb9674
 
       ;
 
