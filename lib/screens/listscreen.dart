@@ -47,7 +47,7 @@ class _ListScreenState extends State<ListScreen> {
       String oid = '63011211129';
 
       var url = Uri.http(
-          '10.34.6.67:3000', '/orderwhere', {'cust_id': '63011211129'});
+          '192.168.1.27:3000', '/orderwhere', {'cust_id': '63011211129'});
 
       ;
 
